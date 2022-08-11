@@ -1,6 +1,6 @@
 class Movie
 
-    attr_accessor = :name, :location, :time, :runtime
+    attr_accessor = :name, :location, :time, :runtime, :theater
     attr_reader = :name
 
     @@all = []
@@ -10,6 +10,7 @@ class Movie
         @location = movie_hash[:location]
         @time = movie_hash[:time]
         @runtime = movie_hash[:runtime]
+        @theater = movie_hash[:theater]
         @@all << self
     end
 
@@ -35,6 +36,10 @@ class Movie
 
     def runtime
         @runtime
+    end
+
+    def theater
+        @theater
     end
 
 
