@@ -8,7 +8,7 @@ zip = gets.chomp
 movies = Scraper.scrape_page(zip)
 Movie.create_from_collection(movies)
 puts "Your closest theater is " + Movie.all[0].theater
-puts "Your theater is located at " + Movie.all[0].location
+puts "Your theaters information is " + Movie.all[0].location
 puts "movies playing are..."
 Movie.all.each do |movie|
     puts "name:" + movie.name
