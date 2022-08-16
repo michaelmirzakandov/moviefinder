@@ -1,7 +1,7 @@
 class Movie
 
-    attr_accessor = :name, :location, :time, :runtime, :theater
-    attr_reader = :name
+    attr_accessor  :name, :location, :time, :runtime, :theater
+
 
     @@all = []
 
@@ -22,28 +22,18 @@ class Movie
         @@all
     end
 
-    def name
-        @name
+
+
+
+end
+
+def trees
+    tree = "oak"
+    if tree == "oak"
+        "oak"
+    else 
+        "pine"
     end
-
-    def location
-        @location
-    end
-    
-    def time
-        @time
-    end
-
-    def runtime
-        @runtime
-    end
-
-    def theater
-        @theater
-    end
-
-
-
-
+    "fur"
 end
 
